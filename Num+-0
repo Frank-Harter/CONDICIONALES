@@ -1,0 +1,30 @@
+#!/bin/bash
+read -p "PON UN NUMERO: " numero
+
+# > Mas grande que
+if (( $numero > 0 ))
+then
+echo "Numero MAYOR a 0"
+# == Igual a 0
+elif (( $numero == 0 )) ;then
+echo "Ni MAYOR ni MENOR a 0, es 0"
+# No es ni > ni == 0 (solamente queda negativo)
+else
+echo "Numero NEGATIVO a 0"
+fi
+
+# -gt Más GRANDE QUE
+if [ $numero -gt 0 ]; then
+echo "Numero POSITIVO"
+# -eq ES DE EQUAL
+elif [ $numero -eq 0 ]
+then
+echo "Numero equal a 0"
+#-lt es de LOWER THAN
+elif [ -lt ]; then
+echo "Numero NEGATIVO"
+fi
+
+
+
+
