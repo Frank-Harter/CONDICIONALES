@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$#" -eq 2 ]
+then
+        cont = $(grep "$1" "$2" |wc -l )
+        echo "Se han encontrado $cont paquetes con el protolo $1"
+
+else
+echo "Pon Protocolo y Nombre Archivo"
+fi
+
+
