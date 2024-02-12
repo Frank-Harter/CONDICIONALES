@@ -1,0 +1,10 @@
+#!/bin/bash
+directorio=$1
+archivo=$2
+if [ -d "$directorio" ];then
+echo "Creando backup"
+tar -czf "$archivo.tar.gz" "$directorio"
+fi
+
+
+
