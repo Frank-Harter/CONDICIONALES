@@ -1,0 +1,14 @@
+#!/bin/bash
+echo $(ls -l $1 |cut -d' ' -f 1)
+
+if [ -d $1 ];then
+echo "Es un directorio la ruta"
+elif [ -f $1 ];then
+ruta=$1
+extension="${ruta##*.}"
+echo "La ruta $ruta corresponde a un archivo con extensión $extension"
+else
+echo "No es ni un archivo ni una carpeta"
+fi
+
+
