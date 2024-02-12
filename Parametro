@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ $# -eq 3  ]; then
+        read -p "Escribe una ruta de Archivo: " fix
+        if [ -f $fix ]; then
+                echo "Existe Archivo"
+        else
+                echo "No existe Archivo"
+        fi
+else
+echo "No hay 3 parametros"
+fi
+
+
